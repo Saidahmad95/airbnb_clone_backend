@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    volumes:
+      - ~/volumes/uzdevv/postgresql/:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=228mir18
+      - POSTGRES_USER=postgres
+    ports:
+      - :5432
